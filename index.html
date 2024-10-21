@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title style="text-align: center; font-size: 2em; font-family: 'Times New Roman', Times, serif; color: navy;">Thyroid Predictor</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2em;
+            text-align: center;
+            background-color: pink;
+        }
+        form {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Thyroid Predictor</h1>
+    <form method="post" action="/predict">
+        <label for="age">Age</label>
+        <input type="text" name="age" id="age"><br><br>
+
+        <label for="on_thyroine">On Thyroine</label>
+        <select name="on_thyroine" id="on_thyroine">
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select><br><br>
+
+        <label for="on_antithyroid_meds">On Antithyroid Meds</label>
+        <select name="on_antithyroid_meds" id="on_antithyroid_meds">
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select><br><br>
+
+        <label for="pregnant">Pregnant</label>
+        <select name="pregnant" id="pregnant">
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select><br><br>
+
+        <label for="thyroid_surgery">Thyroid Surgery</label>
+        <select name="thyroid_surgery" id="thyroid_surgery">
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select><br><br>
+
+        <label for="I131_treatment">I131 Treatment</label>
+        <select name="I131_treatment" id="I131_treatment">
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select><br><br>
+
+        <label for="lithium">Lithium</label>
+        <select name="lithium" id="lithium">
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select><br><br>
+
+        <label for="goitre">Goitre</label>
+        <select name="goitre" id="goitre">
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select><br><br>
+
+        <label for="TSH_measured">TSH Measured</label>
+        <select name="TSH_measured" id="TSH_measured">
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select><br><br>
+
+        <label for="TSH">TSH</label>
+        <input type="text" name="TSH" id="TSH"><br><br>
+
+        <label for="TT4_measured">TT4 Measured</label>
+        <select name="TT4_measured" id="TT4_measured">
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select><br><br>
+
+        <label for="TT4">TT4</label>
+        <input type="text" name="TT4" id="TT4"><br><br>
+
+        <label for="T4U_measured">T4U Measured</label>
+        <select name="T4U_measured" id="T4U_measured">
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select><br><br>
+
+        <label for="T4U">T4U</label>
+        <input type="text" name="T4U" id="T4U"><br><br>
+
+        <label for="FTI_measured">FTI Measured</label>
+        <select name="FTI_measured" id="FTI_measured">
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select><br><br>
+
+        <label for="FTI">FTI</label>
+        <input type="text" name="FTI" id="FTI"><br><br>
+
+        <label for="patient_id">Patient ID</label>
+        <input type="text" name="patient_id" id="patient_id"><br><br>
+
+        <label for="sex_F">Sex (Female)</label>
+        <select name="sex_F" id="sex_F">
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select><br><br>
+
+        <label for="sex_M">Sex (Male)</label>
+        <select name="sex_M" id="sex_M">
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select><br><br>
+
+        <input type="submit" value="Predict"><br><br>
+    </form>
+</body>
+</html>
